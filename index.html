@@ -38,8 +38,8 @@
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Hello!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                <!--<div class="masthead-subheading">Hello!</div>-->
+                <div class="masthead-heading text-uppercase">Software Engineer. Problem Solver. </div>
                 <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Find out more about me</a>
             </div>
         </header>
@@ -76,7 +76,7 @@
                             <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="my-3">Profession</h4>
-                        <p class="text-muted">I am an incoming full-time software engineer at Microsoft. I will be working on the Whiteboard application in Seatlle, WA.
+                        <p class="text-muted">I am an incoming full-time software engineer at Microsoft. I will be working on the Whiteboard application in Seattle, WA.
                         </p>
                     </div>
                 </div>
@@ -87,7 +87,9 @@
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projects</h2>
-                    <h3 class="section-subheading text-muted"></h3>
+                    <h3 class="section-subheading text-muted">I am passtionate about projects involving data. I strive to always be learning and 
+                        I am passionate about teaching others about subjects I am interested in.
+                    </h3>
                 </div>
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
@@ -124,7 +126,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/info1998.png" alt="" />
+                                <img class="img-fluid" src="assets/img/portfolio/datascience_venn.png" alt="" />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Teaching</div>
@@ -188,6 +190,18 @@
                 </div>
                 <ul class="timeline">
                     <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/msft_logo.png" alt="" /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>May 2020 - Aug 2020</h4>
+                                <h4 class="subheading">Microsoft</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">I worked as a software engineer intern for the Whiteboard app. I added
+                                a shape recognition feature to the web application.
+                            </p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
                         <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/apl_logo.jpg" alt="" /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -196,18 +210,6 @@
                             </div>
                             <div class="timeline-body"><p class="text-muted">As a data science intern, I worked with a team of 6 other engineers
                                 to develop a pipeline for fake news detection using unsupervised learning.
-                            </p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/msft_logo.png" alt="" /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>May 2019 - Aug 2019</h4>
-                                <h4 class="subheading">Microsoft</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">I worked as a software engineer intern for the Whiteboard app. I added
-                                a shape recognition feature to the web application.
                             </p></div>
                         </div>
                     </li>
@@ -318,10 +320,14 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Me</h2>
+                    <h2 class="section-heading text-uppercase">Connect With Me</h2>
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
-                <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="text-center">
+                    <div id="success"></div>
+                    <a href="https://www.linkedin.com/in/camilo-cedeno-tobon/" target="_blank"><button class="btn btn-primary btn-xl">LinkedIn</button></a>
+                </div>
+                <!--<form id="contactForm" name="sentMessage" novalidate="novalidate">
                     <div class="row align-items-stretch mb-5">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -348,7 +354,7 @@
                         <div id="success"></div>
                         <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Send Message</button>
                     </div>
-                </form>
+                </form>-->
             </div>
         </section>
         <!-- Footer-->
@@ -382,11 +388,12 @@
                                     <h2 class="text-uppercase">CuSmile</h2>
                                     <p class="item-intro text-muted">Information Retreival System</p>
                                     <a href="http://cusmile.herokuapp.com/" target="_blank"><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/cusmile-full.png" alt="" /></a>
-                                    <p>In this project, in a team with four other students, we created a website where you could query for uplifting news articles.
+                                    <p>In a team with four other students, I created a website where you can query for uplifting news articles.
                                         This project was inspired by the necessity of uplifting news during the COVID-19 pandemic. We gathered our dataset by scraping articles
-                                        from the "Uplifting News" subreddit and using public APIs. We implemented the query searh function by using TF-IDF vector weights and using
-                                        an inverted index for efficiency. We also applied dimensionality reduction to the term document matrix in order to get lower dimesnion document
-                                        vectors since the original term-document matrix was very sparse. Try it out by clicking on the image above!
+                                        from the "Uplifting News" subreddit and using public APIs. We implemented the query search function by using TF-IDF document weights and using
+                                        an inverted index inorder to optmize runtime. We also applied dimensionality reduction to the term document matrix in order to get lower dimension document
+                                        vectors since the original term-document matrix was very sparse. You can try out the website <a href="http://cusmile.herokuapp.com/" target="_blank">here!</a> You can also 
+                                        access the github repository <a href="https://github.com/jenniferjlee/cs4300sp2020-jjl296-ec629-cc2459-tb444-ak778" target="_blank">here!</a>
                                     </p>
                                     <ul class="list-inline">
                                         <li>Date: May 2020</li>
@@ -416,10 +423,11 @@
                                     <p class="item-intro text-muted">Unsupervised Learning Project</p>
                                     <a href="https://github.com/Irina526/fair-clustering-with-overrepresentation-constraint/blob/master/ORIE_4741_Final_Report.pdf" target="_blank"><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/fair_ml.png" alt="" /></a>
                                     <p>
-                                        A project completed wiht 3 other students that re-implements a fair
-                                        clustering algorithm proposed in a recent paper. Fair clustering is clustering while taking into acoount protected attributes.
+                                        In a team with three other students, I worked on a project about fairness in machine learning. The project was to implement
+                                        a fair clustering method proposed in a <a href="https://arxiv.org/pdf/1905.12753.pdf" target="_blank">paper</a>. Fair clustering is defined as clustering while taking into acoount protected attributes.
                                         For example, in a hypothetical dataset, we can define gender to be a protected attribute which implies that no cluster should have
-                                        less than some percent of a specific gender. You can access the code and paper by clicking on the image above!
+                                        less than some percent of a specific gender. You can access the github <a href="https://github.com/Irina526/fair-clustering-with-overrepresentation-constraint" target="_blank">here</a> and our project 
+                                        report <a href="https://github.com/Irina526/fair-clustering-with-overrepresentation-constraint/blob/master/ORIE_4741_Final_Report.pdf" target="_blank">here</a>!
                                     </p>
                                     <ul class="list-inline">
                                         <li>Date: December 2019</li>
@@ -447,13 +455,14 @@
                                     <!-- Project Details Go Here-->
                                     <h2 class="text-uppercase">Teaching</h2>
                                     <p class="item-intro text-muted">Introduction to ML</p>
-                                    <a href="https://cornelldatascience.github.io/info1998/" target="_blank"><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/info1998.png" alt="" /></a>
+                                    <a href="https://cornelldatascience.github.io/info1998/" target="_blank"><img class="img-fluid d-block mx-auto" src="assets/img/portfolio/ml_full.jpeg" alt="" /></a>
                                     <p>During my sophomore year, I became a TA for INFO1988, a student run course for udnergraduates
                                         interested in learning about machine learning. The course was designed for students with no prior
-                                        experience in rigorous math and statisics. The end of goal of the course is for students to have a
+                                        experience in rigorous math and statisics. The end goal of the course is for students to have a
                                         high level understanding of what buzz words like "big data" and "machine learning models" mean and how to build
-                                        a simple machine learning pipeline in python. As a TA, I designed the course content by creating the lecture slides
-                                        and creating code-alongs with Jupyter Notebooks. As an instructor, I managed the course and taught lectures.
+                                        a simple machine learning pipeline using python. The 10-week course is offered twice a week and regularly has atleast 50
+                                        students enrolled. As a TA, I designed the course content by creating the lecture slides
+                                        and creating code-alongs with Jupyter Notebooks. You can view the materials and lecture recordings <a href="https://cornelldatascience.github.io/info1998/schedule.html" target="_blank">here</a>.
                                         Please click on the image above to go to the course website!
                                     </p>
                                     <ul class="list-inline">
